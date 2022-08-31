@@ -406,8 +406,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️Channel', url='https://t.me/TeamMoviesNetwork'),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/teammoviesupdates')
+            InlineKeyboardButton('➡️Channel', url='https://t.me/DTG_TV'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -438,8 +438,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/teammoviesupdates'),
-            InlineKeyboardButton('♥️ Source', url='https://t.me/teammoviesupdates')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS'),
+            InlineKeyboardButton('♥️ Source', url='https://t.me/DTG_TV')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -675,7 +675,7 @@ async def auto_filter(client, msg, spoll=False):
              )
 
     btn.append([
-                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/HowToDownloadorwatch/2"),
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://youtu.be/D-jh8n8Y8PI"),
             ])
         
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
