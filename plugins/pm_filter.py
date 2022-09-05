@@ -440,11 +440,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS'),
-            InlineKeyboardButton('', url='')
+            InlineKeyboardButton('🧑‍💻 𝐃𝐄𝐕', url='https://t.me/FLIGHER'),
+            InlineKeyboardButton('✍ 𝐒𝐎𝐔𝐑𝐂𝐄', url='https://urlsopen.com/tmgF')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🚪 Close', callback_data='close_data')
+            InlineKeyboardButton('🏠 𝐇𝐨𝐦𝐞', callback_data='start'),
+            InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -677,7 +677,7 @@ async def auto_filter(client, msg, spoll=False):
              )
 
     btn.append([
-                InlineKeyboardButton("🤔 How To Download ", url=f"https://youtu.be/D-jh8n8Y8PI"),
+                InlineKeyboardButton("🤔 𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 ", url=f"https://youtube.com/shorts/NUZSuwNQtps"),
             ])
         
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
