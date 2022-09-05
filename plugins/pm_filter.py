@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase If You Want This Movie Join Our Request Group And Request - https://t.me/+BDvuprV0ctVkOTE1')
+            k = await query.message.edit('This Movie Not Found In DataBase If You Want This Movie Join Our Channel🌀https://t.me/lion_stage🌀')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -404,13 +404,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬💬 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️Channel', url='https://t.me/DTG_TV'),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS')
+            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage'),
+            InlineKeyboardButton('🏆𝐓𝐑𝐔𝐌𝐁𝐎𝐓𝐒🏆', url='https://t.me/movie_time_botonly/')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
+            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
+        ], [
+            InlineKeyboardButton('🦾𝐁𝐎𝐓𝐒𝐋𝐈𝐒𝐓🦾',url='https://t.me/movie_time_botonly/21')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -427,8 +429,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('🏠 𝐇𝐨𝐦𝐞', callback_data='start'),
+            InlineKeyboardButton('📊 𝐒𝐭𝐚𝐭𝐮𝐬', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -439,10 +441,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS'),
-            InlineKeyboardButton('♥️ Source', url='https://t.me/DTG_TV')
+            InlineKeyboardButton('', url='')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🚪 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
