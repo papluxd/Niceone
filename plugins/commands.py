@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/lion_stage')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,13 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬💬 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('➡️Channel', url='https://t.me/DTG_TV'),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS')
+            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage'),
+            InlineKeyboardButton('🏆𝐓𝐑𝐔𝐌𝐁𝐎𝐓𝐒🏆', url='https://t.me/movie_time_botonly')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
+            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -88,13 +88,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬💬 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/DTG_BOTS')
+            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
+            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
