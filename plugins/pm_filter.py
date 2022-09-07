@@ -235,7 +235,7 @@ async def next_page(bot, query):
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
             [InlineKeyboardButton("🤔 𝐇𝐨𝐰 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 ", url=f"https://youtube.com/shorts/NUZSuwNQtps")])
-        btn.append(InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')])
+        btn.append([InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')])
     else:
         btn.append(
             [
