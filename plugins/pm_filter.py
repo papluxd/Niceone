@@ -681,7 +681,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    btn.append([InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')])    
+    
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
