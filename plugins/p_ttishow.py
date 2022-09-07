@@ -148,7 +148,7 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
-
+btn.append([InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')])
 
 # a function for trespassing into others groups, Inspired by a Vazha
 # Not to be used , But Just to showcase his vazhatharam.
