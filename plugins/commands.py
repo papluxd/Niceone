@@ -49,6 +49,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('Help ⚡', callback_data='help'),
             InlineKeyboardButton('About Me 🙈', callback_data='about')
+            ],[
+            InlineKeyboardButton('Any Queries DM Here ✅',url='https://t.me/Link_Reporter_Bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
