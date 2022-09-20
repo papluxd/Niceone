@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/lion_stage')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/moviesss4ers')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/Link_Reporter_Bot')
             ],[
-            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage'),
-            InlineKeyboardButton('🏆𝐓𝐑𝐔𝐌𝐁𝐎𝐓𝐒🏆', url='https://t.me/movie_time_botonly')
+            InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers'),
+            InlineKeyboardButton('Group 👀', url='https://t.me/moviei43')
             ],[
-            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
-            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
+            InlineKeyboardButton('Help ⚡', callback_data='help'),
+            InlineKeyboardButton('About Me 🙈', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -91,10 +91,10 @@ async def start(client, message):
             InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/Link_Reporter_Bot')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage')
+            InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers')
             ],[
-            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
-            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
+            InlineKeyboardButton('Help ⚡', callback_data='help'),
+            InlineKeyboardButton('About Me 🙈', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -360,7 +360,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('Piracy Is Crime')
+    await message.answer('Thanks To Using Me 😇')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
