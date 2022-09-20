@@ -512,7 +512,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😏", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -543,15 +543,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬💬 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('❤️𝐂𝐇𝐀𝐍𝐍𝐄𝐋❤️', url='https://t.me/lion_stage'),
-            InlineKeyboardButton('🏆𝐓𝐑𝐔𝐌𝐁𝐎𝐓𝐒🏆', url='https://t.me/movie_time_botonly')
+            InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers'),
+            InlineKeyboardButton('Group 👀', url='https://t.me/moviei43')
         ], [
-            InlineKeyboardButton('🆘𝐇𝐄𝐋𝐏🆘', callback_data='help'),
-            InlineKeyboardButton('🤠𝐀𝐁𝐎𝐔𝐓🤠', callback_data='about')
+            InlineKeyboardButton('Help ⚡', callback_data='help'),
+            InlineKeyboardButton('About Me 💥', callback_data='about')
         ], [
-            InlineKeyboardButton('🦾𝐁𝐎𝐓𝐒𝐋𝐈𝐒𝐓🦾',url='https://t.me/movie_time_botonly/21')
+            InlineKeyboardButton('Any Queries DM Here ✅',url='https://t.me/Link_Reporter_Bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -579,11 +579,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🧑‍💻 𝐃𝐄𝐕', url='https://t.me/FLIGHER'),
-            InlineKeyboardButton('✍ 𝐒𝐎𝐔𝐑𝐂𝐄', url='https://urlsopen.com/tmgF')
+            InlineKeyboardButton('Developer 😎', url='https://t.me/Nexus_Shubhu'),
+            InlineKeyboardButton('Source Code', url='https://t.me/TeamEvamaria')
         ], [
-            InlineKeyboardButton('🏠 𝐇𝐨𝐦𝐞', callback_data='start'),
-            InlineKeyboardButton('🚪 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
+            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('🚪 Close it', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -683,7 +683,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("Fetching DataBase😗")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
