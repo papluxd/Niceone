@@ -42,7 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/Link_Reporter_Bot')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers'),
             InlineKeyboardButton('Group 👀', url='https://t.me/moviei43')
